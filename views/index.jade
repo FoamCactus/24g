@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  +videos("who_is","https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.mp4")
+  +videos("ces","https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/ces_overview.mp4")
+  +videos("drones","https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/future_of_drones.mp4")
+
+  mixin videos(name,url)
+      div.videoContainer
+          video(id=name)(controls)
+              source(src="#{url}")
+          div.stats
+           div.right
+            img.thumbs(src="/images/thumbs_up.svg")
+            img.thumbs(src="/images/thumbs_down.svg")
+
