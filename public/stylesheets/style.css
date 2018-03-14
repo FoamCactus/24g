@@ -1,20 +1,34 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffa1;
+  font: 14px "Brandon Grotesque Regular", Helvetica, Arial, sans-serif;
+}
+html {
+    height: 100%;
 }
 
 a {
   color: #00B7FF;
 }
-div.videos {
-
+.stats{
+    height:2em;
 }
 video {
     width:100%;
+    background-color: #000;
 }
 .right {
     float: right;
 }
+.left {
+    float:left;
+}
 .thumbs {
     margin: .5em;
+}
+img {
+    margin: .5em;
+}
+.videoContainer {
+    margin-bottom: 1em;
 }
