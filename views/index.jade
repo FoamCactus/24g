@@ -48,8 +48,6 @@ block content
          console.log(url);
          var xhr = new XMLHttpRequest();
          var jq = "video."+cla+" ~ div.stats > div.views";
-         console.log(data[cla-1].views);
-         $(jq).text("Total views: "+data[cla-1].views+1);
          xhr.open("GET",url,true);
          xhr.send(null);
       });
